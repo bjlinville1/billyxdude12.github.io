@@ -1,0 +1,103 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0, user-scalable=no">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+
+  <title>Sprint Video</title>
+
+  <script src="//cdn.8thwall.com/web/aframe/8frame-0.9.0.min.js"></script>
+
+  <!-- XR Extras - provides utilities like load screen, almost there, and error handling.
+         See github.com/8thwall/web/xrextras -->
+  <script src="//cdn.8thwall.com/web/xrextras/xrextras.js"></script>
+
+  <!-- 8thWall Web - Replace the app key here with your own app key -->
+  <script src="//apps.8thwall.com/xrweb?appKey=knUqHjp0A7EbppRV2HMS9E5FaDZLVaZooq6LGUHHZDPObhPoc6KymCynlngs9lq4jfdbJL"></script>
+ 
+</head>
+
+<body>
+  
+  <a-scene
+    xrweb="disableWorldTracking: true"
+    xrextras-gesture-detector
+    xrextras-loading
+    xrextras-almost-there
+    xrextras-runtime-error
+    >
+
+
+    <a-assets>
+   
+	  <img id="SprintImage" src="https://static.wixstatic.com/media/53058a_d65b0fffe7794b6293173d3bd3688cfd~mv2.jpg/v1/fill/w_480,h_640/Sprint-target.jpg">
+      <video
+        id="currentVideo"
+        autoplay="false"
+        crossorigin="anonymous"
+        loop="false"
+        src = "https://video.wixstatic.com/video/53058a_ca4451222ca44212a70303e3b8b94a71/720p/mp4/file.mp4">
+      </video>
+
+    </a-assets>
+
+    <a-camera
+      position="0 4 10"
+      raycaster="objects: .cantap"
+      cursor="fuse: false; rayOrigin: mouse;">
+    </a-camera>
+
+    <a-light type="directional" intensity="0.5" position="1 1 1"></a-light>
+
+    <a-light type="ambient" intensity="1"></a-light>
+
+    <!-- Note: "name:" must be set to the name of the image target uploaded to the 8th Wall Console -->
+   	<button>Play</button>
+    <a-entity 
+      xrextras-named-image-target="name: sprint"
+      xrextras-play-video="video: #currentVideo; thumb: #dance-video-img; canstop: true"
+      geometry="primitive: plane; height: 0.85; width: 1.38;"
+      >
+      
+    </a-entity>
+  <div id="allButtons">
+
+     <!--  <button type="button" id=button1 style= "
+        -webkit-appearance: none;
+        border-radius: 2;
+        background-color: white;
+        position: fixed;
+        font-size: 4;
+        display: inline-block;
+        bottom: 2%; 
+        height: 50px;
+        width: 41.6px;
+        left: 50%;
+        text-align: center;
+        opacity: 0;
+        z-index: 1;">
+        <a href="https://businesssolutions.sprint.com/save/?ECID=vanity:save">More Info</a>
+      </button> -->
+     
+    
+      </div>
+
+  </a-scene>
+<script>
+function gotoWebsite(){ 
+  document.getElementById("").src="https://businesssolutions.sprint.com/save/?ECID=vanity:save"
+}
+
+var linkedButton = document.getElementById("button");
+var video = document.getElementById("currentVideo");
+video.onended = function() {
+	linkButton.style.opacity = 1;
+}
+
+</script>
+
+</body>
+</html>
+
+
