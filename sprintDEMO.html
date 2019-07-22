@@ -73,15 +73,14 @@
         background-color: white;
         position: fixed;
         font-size: 4;
-        display: inline-block;
+        display: none;
         bottom: 2%; 
         height: 50px;
         width: 41.6px;
         left: 50%;
         text-align: center;
         opacity: 0;
-        z-index: 1;
-        display:none">
+        z-index: 1;">
         <a href="https://businesssolutions.sprint.com/save/?ECID=vanity:save">Visit Page</a>
       </button>
      
@@ -98,9 +97,9 @@
 // }
 
 function showButton(){
-  document.getElementById("button1").style.display="block";
+  document.getElementById("button1").style.display="inline-block";
 }
-setTimeout("showButton()",54000);
+setTimeout("showButton()", 54000);
 
 </script>
 
