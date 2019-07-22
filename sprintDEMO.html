@@ -16,6 +16,11 @@
   <!-- 8thWall Web - Replace the app key here with your own app key -->
   <script src="//apps.8thwall.com/xrweb?appKey=knUqHjp0A7EbppRV2HMS9E5FaDZLVaZooq6LGUHHZDPObhPoc6KymCynlngs9lq4jfdbJL"></script>
  
+  <script>
+  
+
+  </script>
+
 </head>
 
 <body>
@@ -34,7 +39,7 @@
 	  <img id="SprintImage" src="https://static.wixstatic.com/media/53058a_d65b0fffe7794b6293173d3bd3688cfd~mv2.jpg/v1/fill/w_480,h_640/Sprint-target.jpg">
       <video
         id="currentVideo"
-        autoplay="false"
+        autoplay="true"
         crossorigin="anonymous"
         loop="false"
         src = "https://video.wixstatic.com/video/53058a_ca4451222ca44212a70303e3b8b94a71/720p/mp4/file.mp4">
@@ -56,14 +61,13 @@
    	<button>Play</button>
     <a-entity 
       xrextras-named-image-target="name: sprint"
-      xrextras-play-video="video: #currentVideo; thumb: #dance-video-img; canstop: true"
+      xrextras-play-video="video: #currentVideo; thumb: #sprintImage; canstop: true"
       geometry="primitive: plane; height: 0.85; width: 1.38;"
       >
       
     </a-entity>
   <div id="allButtons">
-
-     <!--  <button type="button" id=button1 style= "
+      <button type="button" id=button1 style= "
         -webkit-appearance: none;
         border-radius: 2;
         background-color: white;
@@ -76,24 +80,27 @@
         left: 50%;
         text-align: center;
         opacity: 0;
-        z-index: 1;">
+        z-index: 1;
+        display:none">
         <a href="https://businesssolutions.sprint.com/save/?ECID=vanity:save">More Info</a>
-      </button> -->
+      </button>
      
     
       </div>
 
   </a-scene>
 <script>
-function gotoWebsite(){ 
-  document.getElementById("").src="https://businesssolutions.sprint.com/save/?ECID=vanity:save"
-}
 
 var linkedButton = document.getElementById("button");
 var video = document.getElementById("currentVideo");
 video.onended = function() {
 	linkButton.style.opacity = 1;
 }
+
+function showButton(){
+  document.getElementById("button1").style .display="inline";
+}
+setTimeout("showButton()",58000);
 
 </script>
 
