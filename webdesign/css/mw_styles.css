@@ -23,31 +23,76 @@ body{
    text-align: center;
    
 }
-nav ul{
+nav{
    background-color: rgb(125,120,89);
    line-height: 3em
+
+ 
+}
+nav ul li a{
+	color: white;
+	color: rgba(255,255,255,.5);
+	text-decoration: none;
+}
+
+nav ul li{
    list-style-type: none;
-
 }
 
-nav ul:hover{
-   background-color: rgb(131,121,36);
-  
+nav ul li:hover{
+	background-color: rgb(132,121,36);
+	list-style-image: url(image/wheelmarker.png);
+}
+nav ul li a:hover{
+	color: yellow;
+	color: rgba(255,255,255,1);
+}
+#leftsection p {
+  font-size: 22px;
 }
 
-ul{
-   list-style-image: url('image/wheelmarker.png');
-     
+#leftsection > p:first-of-type:first-line{
+text-transform: uppercase;
 }
 
-li a:link{
+blockquote{
+  background-color: rgb(131,121,36);
   color: white;
-  color: rgba(255,255,255,0.5);
+  font-size: 16px;
+  font-family: Comic Sans MS, Times, cursive;
+}
+
+blockquote p:before{
+  content: '"';
+}
+
+blockquote p:after{
+  content: '"';
+
+}
+
+#rightsection h1{
+  font-size: 22px;
+  letter-spacing: 3px;
   text-decoration: none;
+  text-align: center;
 }
 
-li a:hover{
-  
-
+#rightsection h2{
+  font-size: 18px;
+  text-align: right;
+  text-decoration: none;
+  font-weight: normal;
 }
 
+#rightsection p{
+  color: gray;
+  font-size: 14px;
+  text-align: justify;
+}
+
+footer address {
+  font-size: 16px;
+  font-style: normal;
+  text-align: center;
+}
