@@ -37,7 +37,7 @@ body{
 
 #page {
     background-color: rgb(255,255,128);
-    background-image: url(bluebar.png);
+    background-image: url("https://raw.githubusercontent.com/billyxdude12/billyxdude12.github.io/master/webdesign/image/bluebar.png");
     background-repeat: repeat-y;
     background-position: left; 
     border: 15px ridge rgb(70,76,222); 
@@ -85,16 +85,17 @@ nav.vertical a:hover{
     font-weight: normal;
     letter-spacing: 5px; 
     margin: 20px; 
-
-#summary p {
-    margin: 10px; 
-    
 }
+
+#summary p{
+    margin: 10px; 
+}    
+
 
 #map {
     position: relative; 
     background-color:white; 
-    background: url(/image/lpmap.jpg) top left no-repeat; 
+    background: url("https://raw.githubusercontent.com/billyxdude12/billyxdude12.github.io/master/webdesign/image/lpmap.jpg") top left no-repeat; 
     border: 1px solid black; 
     float: left;
     margin-left: 30px; 
@@ -103,22 +104,25 @@ nav.vertical a:hover{
 }
 
 figure {
-    background-color: rgb(70,76,222); 
+    background-color: rgb(70,76,222);
+    clip: rect(auto,20px,20px,auto); 
     color: white; 
     width: 150px; 
     border-radius: 15px; 
     position: absolute; 
     z-index: 1; /
-    clip: rect(auto,20px,20px,auto ); 
+    
 }
+
 figure:hover {
     background-color: rgb(70,76,222); 
     color: white; 
     width: 150px; 
     border-radius: 15px;
     position: absolute; 
-    z-index: 2; 
-    clip:auto;
+    z-index: 2;
+    clip: rect(auto,auto,auto,auto); 
+   
    
 }
 
