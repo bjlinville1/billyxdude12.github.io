@@ -55,7 +55,7 @@ padding: 0px;
    line-height: 20px;
    height: 20px; 
    text-align: center; 
-   background: url(tab.jpg) no-repeat top left;
+   background-image: url(webdesign/image/tab.jpg) no-repeat top left;
 }
 
 nav ul li a {
