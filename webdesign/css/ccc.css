@@ -48,14 +48,15 @@ nav ul {
 }
 
 nav ul li {
-padding: 0px;
-   float: left; 
-   margin: 0px 3px; 
-   width: 100px; 
-   line-height: 20px;
-   height: 20px; 
-   text-align: center; 
-   background-image: url(webdesign/image/tab.jpg) no-repeat top left;
+      padding: 0px;
+      float: left; 
+      margin: 0px 3px; 
+      width: 100px; 
+      line-height: 20px;
+      height: 20px; 
+      text-align: center; 
+      background-image: url("../image/tab.jpg");
+      background-repeat: no-repeat;
 }
 
 nav ul li a {
@@ -67,7 +68,7 @@ nav ul li a {
 }
 
 nav ul li:hover {
-   background: url(tabred.jpg) no-repeat top left;
+   background: url("../image/tabred.jpg") no-repeat top left;
 }
 
 
@@ -117,3 +118,4 @@ footer address {
    font-style: normal;
    text-align: center;
 }
+

@@ -1,0 +1,69 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 7
+   Case Problem 4
+
+   Bstyles style sheet
+   Author: 
+   Date:   
+
+   Filename:         bstyles.css
+   Supporting Files: bottom.jpg, bottomleft.jpg, bottomright.jpg,
+                     left.jpg, right.jpg, top.jpg,
+                     tab.jpg, topleft.jpg, topright.jpg, redtab.jpg
+
+*/
+
+*{
+   font-family: sans-serif, serif, Times New Roman;
+
+}
+
+.navbar {
+   overflow: hidden;
+}
+
+nav ul {
+  list-style-type: none;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  
+  top:0;
+  width: 100%;
+  float:left;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: #111;
+}
+
+footer { 
+border-top: 1px solid #d5d5d5; font-size: .8em;
+font-size: 1em; padding: 0px; list-style: none; font-weight: bold; }
+
+}
+body.concert{
+   float: right;
+}
+
+footer.header{
+   float: right;
+
+}

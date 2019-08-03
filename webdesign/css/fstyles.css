@@ -18,7 +18,7 @@ section, nav {
 }
 
 body 
-   {background: white url(fback.jpg) no-repeat top left; 
+   {background: white url("../image/fback.jpg") no-repeat top left; 
     margin: 0px; 
     padding: 0px;
 }

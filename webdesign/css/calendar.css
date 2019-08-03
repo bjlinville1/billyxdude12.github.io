@@ -24,6 +24,7 @@ table{
    margin-right: auto;
    padding: 40px;
    width: 650px;
+   
 
 }
 
@@ -39,3 +40,57 @@ table.calendar caption{
    width: 650px;
 
 }
+
+.topleft {
+   background-image: url("../image/topleft.jpg") ;
+   background-repeat: no-repeat;  
+   background-position: top left;
+
+}
+
+.topright {
+   background-image: url("../image/topright.jpg") ;
+   background-repeat: no-repeat;  
+   background-position: top right;
+}
+
+.bottomleft {
+   background-image: url("../image/bottomleft.jpg") ;
+   background-repeat: no-repeat;  
+   background-position: bottom left;
+}
+
+.bottomright {
+   background-image: url("../image/bottomright.jpg") ;
+   background-repeat: no-repeat;  
+   background-position: bottom right;
+}
+
+.top {
+   background-image: url("../image/top.jpg") ;
+   background-repeat: repeat-x;  
+   background-position: top;
+}
+
+.left {
+   background-image: url("../image/left.jpg");
+   background-repeat: repeat-y;
+   background-position: left;
+}
+
+.right {
+   background-image: url("../image/right.jpg") ;
+   background-repeat: repeat-y;  
+   background-position: right;
+}
+
+.bottom {
+   background-image: url("../image/bottom.jpg") ;
+   background-repeat: repeat-x;  
+   background-position: bottom;
+}
+
+table.h3{
+   font-size: 8px;
+}
+

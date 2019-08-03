@@ -8,7 +8,7 @@
       Case Problem 3
 
       Exploring the World of Fractals
-      Author: 
+      Author: William Eisenberger
       Date:   
 
       Filename:         fractal.htm
@@ -21,15 +21,15 @@
 
       <meta charset="UTF-8" />
       <title>Exploring the World of Fractals</title>
-      <script src="modernizr-1.5.js"></script>
+      <script src="js/modernizr-1.5.js"></script>
 
-      <link href="fstyles.css" rel="stylesheet" />
+      <link href="css/fstyles.css" rel="stylesheet" />
 
    </head>
 
    <body>
 
-      <header><img src="flogo.jpg" alt="Exploring the World of Fractals" /></header>
+      <header><img src="image/flogo.jpg" alt="Exploring the World of Fractals" /></header>
 
       <nav>
          <ul>
@@ -52,7 +52,23 @@
       </nav>
 
       <section>
+           <video
+            width="320";
+            height="260";
+            poster="image/zoom.png"
+            controls
+            loop
+            >
+            <source src="media/mandel.mp4" type="video/mp4">
+            <source src="media/mandel.webm" type="video/webm"> 
+            <object data="media/mandel.swf"
+            type="application/x-shockwave-flash">
+              
+              You must have the <a href=”http://www.adobe.com/products/shockwaveplayer/”>
+              Shockwave Player </a> to play the video clip.
 
+            </object>
+          </video>
          <figure>
 
 
@@ -97,7 +113,11 @@
             </ul>
 
             <p>
-              
+              <object data="class/mandel.class"
+              type="application/Java"
+              width="280"
+              height="240"> Your browser does not support Java applets
+              </object>
               <br />      
               This applet is generously provided by 
                  <a href="http://daa.com.au/~james/fractals/">James Henstridge</a>.
