@@ -1,0 +1,20 @@
+/*
+   New Perspectives on HTML and CSS
+   Tutorial 8
+   Case Problem 3
+
+   Special Effects style sheet
+   Author: 
+   Date:   
+
+   Filename:         sweffects.css
+   Supporting Files: 
+
+*/
+
+body {
+	/*background-image: radial-gradient(circle closet-corner at 40% 70%, rgba(171,171,171,0.5), 50%);*/
+	 background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);
+}
+
+
