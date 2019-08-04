@@ -15,6 +15,8 @@
 body {
 	/*background-image: radial-gradient(circle closet-corner at 40% 70%, rgba(171,171,171,0.5), 50%);*/
 	 background-image: radial-gradient(closest-side at 60% 55%, blue, green, yellow, black);
+
+	 background: -webkit-gradient(radial, 60% 55%, blue gree);
 }
 
 
