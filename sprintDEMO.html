@@ -15,9 +15,17 @@
 
   <!-- 8thWall Web - Replace the app key here with your own app key -->
   <script src="//apps.8thwall.com/xrweb?appKey=knUqHjp0A7EbppRV2HMS9E5FaDZLVaZooq6LGUHHZDPObhPoc6KymCynlngs9lq4jfdbJL"></script>
- 
-  <script>
   
+  <!-- Materialize cdn links -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css"> 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+  <script type="application/javascript">
+
+    document.addEventListener('DOMContentLoaded', function() {
+      var elems = document.querySelectorAll('.carousel');
+      var instances = M.Carousel.init(elems);
+    });
 
   </script>
 
@@ -82,7 +90,14 @@
         z-index: 1;">
         <a href="https://businesssolutions.sprint.com/save/?ECID=vanity:save">Visit Page</a>
       </button>  
-    
+  
+  <div class="carousel">
+    <a class="carousel-item" href="#one!"><img src="https://lorempixel.com/250/250/nature/1"></a>
+    <a class="carousel-item" href="#two!"><img src="https://lorempixel.com/250/250/nature/2"></a>
+    <a class="carousel-item" href="#three!"><img src="https://lorempixel.com/250/250/nature/3"></a>
+    <a class="carousel-item" href="#four!"><img src="https://lorempixel.com/250/250/nature/4"></a>
+    <a class="carousel-item" href="#five!"><img src="https://lorempixel.com/250/250/nature/5"></a>
+  </div>
 
   </a-scene>
 <script>
